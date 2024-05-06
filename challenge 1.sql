@@ -1,5 +1,9 @@
 -- IBM Data Engineer SQL Interview Question (Hacker Rank Online Test)
-    
+
+-- Q1. Write a query to print the maximum number of discounted tours any 1 family in the families table can choose from. Conside only Min_Size column
+
+-- Q2. Now imagine that you have a max_size column as well for each tour. solve the question again.
+
 CREATE TABLE FAMILIES (
     ID VARCHAR(50),
     NAME VARCHAR(50),
