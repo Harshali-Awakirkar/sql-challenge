@@ -4,6 +4,7 @@
 
 -- Q2. Now imagine that you have a max_size column as well for each tour. solve the question again.
 
+-- -- Create FAMILIES table
 CREATE TABLE FAMILIES (
     ID VARCHAR(50),
     NAME VARCHAR(50),
@@ -11,6 +12,7 @@ CREATE TABLE FAMILIES (
 );
 
 -- Insert data into FAMILIES table
+
 INSERT INTO FAMILIES (ID, NAME, FAMILY_SIZE)
 VALUES 
     ('c00dac11bde74750b4d207b9c182a85f', 'Alex Thomas', 9),
@@ -20,13 +22,17 @@ VALUES
     ('e0a5f57516024de2a231d09de2cbe9d1', 'Jessica Wilson', 3);
 
 select * from families;
+
 -- Create COUNTRIES table
+
 CREATE TABLE COUNTRIES (
     ID VARCHAR(50),
     NAME VARCHAR(50),
     MIN_SIZE INT,
  MAX_SIZE INT
 );
+
+-- Insert data into COUNTRIES table
 
 INSERT INTO COUNTRIES (ID, NAME, MIN_SIZE,MAX_SIZE)
 VALUES 
@@ -37,7 +43,7 @@ VALUES
     ('f35a7bb7d44342f7a8a42a53115294a8', 'Canada', 3,5),
     ('a1b5a4b5fc5f46f891d9040566a78f27', 'Japan', 10,12);
     
-    
+select * from Countries;
 
 -- Q1 Solution
 select count(*) as Max_No_Of_Discounted_Tours 
